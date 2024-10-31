@@ -3,9 +3,9 @@
 :root {
     --bg-color: #99C3F8;
     --text-color: #fff;
-    --primary-color: #020228;
-    --secondary-color: #ff00e5;
-    --tertiary-color: #b535f6;
+    --primary-color: #102857;
+    --secondary-color: #06296f;
+    --tertiary-color: #058596;
     --btn-bg-color-gradient: linear-gradient(45deg,
             #9b34ef 0%,
             #490cb0 20%,
@@ -16,7 +16,7 @@
     --divider-bg-color: linear-gradient(90deg,
             #5516ba,
             rgba(255, 0, 229, 0.5) 80%);
-    --nav-bg-color: rgba(0, 0, 0, 0.3);
+    --nav-bg-color: linear-gradient(90deg, #00d4ff00 0%, #06296f 30%, #102857 100%);
     
     --link-color: #9e86ff;
     --form-bg-color: rgba(211, 211, 211, 0.06);

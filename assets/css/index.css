@@ -1,8 +1,7 @@
 @import url(global.css);
 
 body {
-    background:var(--bg-color);
-    padding: 20px;
+    background: var(--bg-color);
     font-family: 'Montserrat';
 }
 
@@ -22,8 +21,12 @@ body {
     opacity: 0.6;
 }
 
+header {
+    height: 500px;
+}
+
 .header {
-    
+    padding: 20px;
     display: grid;
     grid-template-columns: auto 1fr 1fr;
     align-content: center;
@@ -32,14 +35,28 @@ body {
 
     position: relative;
     z-index: 1;
-    
+
 }
 
 header a {
     color: var(--text-color);
     text-decoration: none;
-    padding: 10px;
+    padding: 15px;
     text-transform: uppercase;
+}
+
+.navbar {
+    position: fixed;
+    right: 0;
+    text-align: end;
+    width: 50vw;
+    padding: 15px;
+    background: var(--nav-bg-color);
+}
+
+.navbar a:hover {
+
+    background: var(--tertiary-color);
 }
 
 nav {
