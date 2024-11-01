@@ -61,6 +61,7 @@ header a {
 
 nav {
     justify-self: end;
+    
 }
 
 #coin {
@@ -69,8 +70,42 @@ nav {
 
 main {
     height: 200px;
+    z-index: 1;
+    color: var(--text-color);
+}
+
+.content-box{
+    width: 100%;
+    min-height: 200px;
+    padding: 30px;
+    margin-bottom: 40px;
+    
+}
+
+.left-gradient {
+    background: var(--content-left-bg-color);
+}
+
+.right-gradient {
+    background: var(--content-right-bg-color);
+}
+
+.content {
+    padding: 10px 60px;
+    text-align: justify;
+    
+}
+
+.content h1 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.content p {
+    line-height: 1.5;
 }
 
 footer {
+    z-index: 1;
     height: 200px;
 }

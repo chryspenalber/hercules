@@ -17,6 +17,10 @@
             #5516ba,
             rgba(255, 0, 229, 0.5) 80%);
     --nav-bg-color: linear-gradient(90deg, #00d4ff00 0%, #06296f 30%, #102857 100%);
+
+    --content-left-bg-color: linear-gradient(-90deg, #00d4ff00 0%, #06296f 30%, #102857 100%);
+
+    --content-right-bg-color: linear-gradient(90deg, #00d4ff00 0%, #218794 30%, #058596 100%);
     
     --link-color: #9e86ff;
     --form-bg-color: rgba(211, 211, 211, 0.06);
