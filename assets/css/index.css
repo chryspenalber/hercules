@@ -26,7 +26,11 @@ body {
     position: fixed;
     right: 15px;
     bottom: 10px;
+    background: var(--primary-color);
+    border-radius: 30px;
+    padding: 8px;    
 }
+
 
 header {
     height: 550px;
