@@ -16,8 +16,8 @@ body {
     left: 0;
     width: 100%;
     height: 2400px;
-    background: url(/assets/images/FUNDO.jpg) no-repeat top center / cover;
-    opacity: 0.6;
+    background: linear-gradient(to bottom, transparent 70%, var(--bg-color) 100%), url(/assets/images/FUNDO.jpg) no-repeat top center / cover;
+    opacity: 1;
     z-index: -1;
 }
 
@@ -28,12 +28,12 @@ body {
     bottom: 10px;
     background: var(--primary-color);
     border-radius: 30px;
-    padding: 8px;    
+    padding: 8px;
 }
 
 
 header {
-    height: 550px;
+    height: 580px;
 }
 
 .header {
@@ -58,7 +58,7 @@ header a {
     position: absolute;
     right: 0;
     text-align: end;
-    width: 50vw;
+    width: 750px;
     padding: 15px;
     background: var(--nav-bg-color);
 }
@@ -158,6 +158,18 @@ main {
     background: url(/assets/images/img1.jpg);
     background-size: cover;
     background-position: top;
+}
+
+.audio-container {
+    width: 300px;
+    /* Defina a largura desejada para o player de áudio */
+    margin: 20px auto;
+    text-align: center;
+}
+
+audio {
+    width: 100%;
+    /* Ajusta o player de áudio à largura do contêiner */
 }
 
 footer {
