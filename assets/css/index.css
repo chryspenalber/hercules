@@ -27,10 +27,16 @@ body {
     right: 15px;
     bottom: 10px;
     background: var(--primary-color);
-    border-radius: 30px;
-    padding: 8px;
+    border-radius: 38px;
+    padding: 7px;
+    height: 70px;
+    display: flex;
+    align-items: center;
 }
 
+#topo a img {
+    width: 39px;
+}
 
 header {
     height: 580px;
@@ -168,21 +174,38 @@ main {
     grid-row-gap: 15px;
     justify-items: center;
     grid-auto-flow: dense;
-    
+
 }
 
 .audio-container {
     width: 280px;
-    /* Defina a largura desejada para o player de áudio */
     margin: 20px 0px;
     text-align: center;
 }
 
 audio {
     width: 100%;
-    /* Ajusta o player de áudio à largura do contêiner */
 }
 
+.awards {
+    line-height: 1.3;
+}
+
+.awards h2 {
+    margin: 10px 0px;
+}
+
+.awards ul {
+    padding-left: 15px;
+}
+
+.awards ul ul {
+    padding-left: 15px;
+}
+
+
 footer {
+    
     height: 200px;
+    background: black;
 }
