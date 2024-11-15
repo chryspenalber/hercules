@@ -21,6 +21,8 @@ body {
     z-index: -1;
 }
 
+
+
 #topo {
     position: absolute;
     position: fixed;
@@ -126,9 +128,21 @@ main {
     margin-bottom: 20px;
 }
 
+.content h2 {
+    margin: 25px 0px;
+}
+
 .content p {
     line-height: 1.5;
+    margin-bottom: 15px;
 }
+
+
+
+li {
+    list-style: '⚡';
+}
+
 
 .img-movie {
     display: grid;
@@ -201,6 +215,11 @@ audio {
 
 .awards ul ul {
     padding-left: 15px;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 10px;
 }
 
 
