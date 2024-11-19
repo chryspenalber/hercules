@@ -5,11 +5,6 @@ body {
     font-family: 'Montserrat';
 }
 
-body {
-    position: relative;
-    background-color: var(--bg-color);
-}
-
 .img-overlay {
     position: absolute;
     top: -300px;
@@ -21,19 +16,18 @@ body {
     z-index: -1;
 }
 
-
-
 #topo {
-    position: absolute;
     position: fixed;
     right: 15px;
     bottom: 10px;
     background: var(--primary-color);
     border-radius: 38px;
     padding: 7px;
-    height: 70px;
+    height: 80px;
+    width: 60px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #topo a img {
@@ -84,7 +78,6 @@ nav {
 }
 
 main {
-    height: 200px;
     color: var(--text-color);
 }
 
@@ -165,6 +158,31 @@ li {
     background-size: cover;
     background-position: center;
 }
+#img-2 {
+    background: url(../images/img2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#img-3 {
+    background: url(../images/img3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#img-4 {
+    background: url(../images/img4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#img-5 {
+    background: url(../images/img5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#img-6 {
+    background: url(../images/img6.png);
+    background-size: cover;
+    background-position: center;
+}
 
 .pers-container {
     display: grid;
@@ -223,8 +241,7 @@ li {
 }
 
 
-footer {
-    
+#footer {
     height: 200px;
     background: black;
 }
