@@ -193,7 +193,27 @@ li {
 }
 
 #character-1 {
-    background: url(../images/img1.jpg);
+    background: url(../images/character-1.jpg);
+    background-size: cover;
+    background-position: top;
+}
+#character-2 {
+    background: url(../images/character-2.jpg);
+    background-size: cover;
+    background-position: top;
+}
+#character-3 {
+    background: url(../images/character-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#character-4 {
+    background: url(../images/character-4.jpg);
+    background-size: cover;
+    background-position: 0px -30px;
+}
+#character-5 {
+    background: url(../images/character-5.jpg);
     background-size: cover;
     background-position: top;
 }
