@@ -63,6 +63,8 @@ header a {
     width: 750px;
     padding: 15px;
     background: var(--nav-bg-color);
+    display: flex;
+    
 }
 
 .navbar a:hover {
@@ -127,7 +129,6 @@ main {
 
 .content p {
     line-height: 1.5;
-    margin-bottom: 15px;
 }
 
 
@@ -158,30 +159,44 @@ li {
     background-size: cover;
     background-position: center;
 }
+
 #img-2 {
     background: url(../images/img2.jpg);
     background-size: cover;
     background-position: center;
 }
+
 #img-3 {
     background: url(../images/img3.jpg);
     background-size: cover;
     background-position: center;
 }
+
 #img-4 {
     background: url(../images/img4.jpg);
     background-size: cover;
     background-position: center;
 }
+
 #img-5 {
     background: url(../images/img5.jpg);
     background-size: cover;
     background-position: center;
 }
+
 #img-6 {
     background: url(../images/img6.png);
     background-size: cover;
     background-position: center;
+}
+
+.character-content {
+    padding: 10px 60px;
+}
+
+.character-content h1{
+    padding-bottom: 25px;
+    
 }
 
 .pers-container {
@@ -190,6 +205,18 @@ li {
     grid-template-rows: 1fr;
     grid-column-gap: 10px;
     margin-bottom: 30px;
+    height: 150px;
+}
+
+.character-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 20px;
+}
+
+.character-img-container {
+    min-width: 130px;
 }
 
 #character-1 {
@@ -197,21 +224,25 @@ li {
     background-size: cover;
     background-position: top;
 }
+
 #character-2 {
     background: url(../images/character-2.jpg);
     background-size: cover;
     background-position: top;
 }
+
 #character-3 {
     background: url(../images/character-3.jpg);
     background-size: cover;
     background-position: center;
 }
+
 #character-4 {
     background: url(../images/character-4.jpg);
     background-size: cover;
     background-position: 0px -30px;
 }
+
 #character-5 {
     background: url(../images/character-5.jpg);
     background-size: cover;
@@ -264,4 +295,9 @@ li {
 #footer {
     height: 200px;
     background: black;
+}
+
+@media (max-width: 780px) {    
+    .img-overlay {
+    }
 }

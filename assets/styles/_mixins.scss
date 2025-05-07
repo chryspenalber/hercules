@@ -1,0 +1,28 @@
+// This file contains mixins for the project
+
+@use 'variables' as v;
+@use 'placeholders' as p;
+
+@mixin section-container() {
+    max-width: 80%;
+    background: v.$primary-color;
+    margin: 3rem auto;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+@mixin thunder-flash() {
+    background-color: #fff;
+    animation: thunder-flash 0.5s ease-in-out 3;
+
+    @keyframes thunder-flash {
+        0%,
+        100% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.9;
+        }
+    }
+}

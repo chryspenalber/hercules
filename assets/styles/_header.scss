@@ -1,0 +1,106 @@
+@use 'variables' as v;
+@use 'mixins' as mx;
+@use 'placeholders' as p;
+
+header {
+    background: v.$primary-color;
+    z-index: 5;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 2rem;
+    justify-content: flex-start;
+  
+    // Esconde o checkbox
+    input[type="checkbox"] {
+      display: none;
+    }
+  
+    // Ícone do menu hamburguer
+    .menu-icon {
+      display: none;
+      font-size: 2rem;
+      color: v.$text-color-light;
+      cursor: pointer;
+      margin-left: auto;
+      padding: 1rem;
+    }
+  
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      list-style: none;
+  
+      a {
+        color: v.$text-color-light;
+        text-decoration: none;
+        font-weight: 600;
+        margin: 0 0.2rem;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        border: 2px solid transparent;
+      }
+  
+      a:hover {
+        border: 2px solid v.$tertiary-color;
+        border-radius: 20px;
+        transition: all 0.2s ease-in;
+      }
+    }
+  
+    img {
+      width: 40px;
+      height: auto;
+      margin: 0.8rem;
+    }
+  
+    .menu-secundario {
+      margin-left: auto;
+    }
+  
+    // Estilo responsivo
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+  
+      .menu-icon {
+        display: block;
+      }
+  
+      .menu-principal,
+      .menu-secundario {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        background: v.$primary-color;
+        padding: 1rem 0;
+  
+        ul {
+          flex-direction: column;
+          align-items: flex-start;
+  
+          li {
+            width: 100%;
+          }
+  
+          a {
+            display: block;
+            width: 100%;
+            padding: 0.75rem 1.5rem;
+          }
+        }
+      }
+  
+      input[type="checkbox"]:checked ~ .menu-principal,
+      input[type="checkbox"]:checked ~ .menu-secundario {
+        display: flex;
+      }
+  
+      .menu-secundario {
+        margin-left: 0;
+      }
+    }
+  }
+  

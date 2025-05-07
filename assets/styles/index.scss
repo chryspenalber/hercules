@@ -1,0 +1,35 @@
+@use 'variables' as v;
+@use 'mixins' as mx;
+@use 'header' as h;
+@use 'main' as m;
+@use 'footer' as f;
+@use 'placeholders' as p;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: v.$bg-color;
+    position: relative;
+    color: v.$text-color-light;
+
+    &::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background-image: url('../images/bg-texture.png');
+        background-repeat: repeat;
+        background-size: contain;
+        z-index: -1;
+    }
+}
