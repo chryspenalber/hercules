@@ -273,7 +273,7 @@ header .menu-secundario {
 }
 #personagens .fil:hover {
   background: url("../images/lira.svg") center/cover repeat;
-  background-size: 13%;
+  background-size: 20%;
   background-color: #fff;
   animation: thunder-flash 0.5s ease-in-out 3;
 }
@@ -286,7 +286,7 @@ header .menu-secundario {
   }
 }
 #personagens .hades:hover {
-  background: url("../images/fire.svg") center/cover repeat;
+  background: url("../images/fogo.svg") center/cover repeat;
   background-size: 20%;
   background-color: #fff;
   animation: thunder-flash 0.5s ease-in-out 3;
@@ -300,7 +300,7 @@ header .menu-secundario {
   }
 }
 #personagens .meg:hover {
-  background: url("../images/rosa.svg") center/cover repeat;
+  background: url("../images/flor.svg") center/cover repeat;
   background-size: 20%;
   background-color: #fff;
   animation: thunder-flash 0.5s ease-in-out 3;
@@ -314,8 +314,8 @@ header .menu-secundario {
   }
 }
 #personagens .zeus:hover {
-  background: url("../images/thunder.svg") center/cover repeat;
-  background-size: 40%;
+  background: url("../images/raio.svg") center/cover repeat;
+  background-size: 20%;
   background-color: #fff;
   animation: thunder-flash 0.5s ease-in-out 3;
 }
@@ -328,7 +328,7 @@ header .menu-secundario {
   }
 }
 #personagens .pegaso:hover {
-  background: url("../images/wing2.png") center/cover repeat;
+  background: url("../images/asas.svg") center/cover repeat;
   background-size: 20%;
   background-color: #fff;
   animation: thunder-flash 0.5s ease-in-out 3;
@@ -428,7 +428,7 @@ header .menu-secundario {
   text-align: center;
 }
 #trilha audio {
-  width: 100%;
+  width: 95%;
 }
 
 #premios {

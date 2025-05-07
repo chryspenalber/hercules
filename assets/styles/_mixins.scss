@@ -12,6 +12,7 @@
 }
 
 @mixin thunder-flash() {
+    background-size: 20%;
     background-color: #fff;
     animation: thunder-flash 0.5s ease-in-out 3;
 

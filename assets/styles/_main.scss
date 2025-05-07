@@ -184,42 +184,42 @@
     .herc:hover {
         background: url('../images/halter.svg') center/cover repeat;
 
-        background-size: 20%;
+        
 
         @include mx.thunder-flash();
     }
 
     .fil:hover {
         background: url('../images/lira.svg') center/cover repeat;
-        background-size: 13%;
+        
 
         @include mx.thunder-flash();
     }
 
     .hades:hover {
-        background: url('../images/fire.svg') center/cover repeat;
-        background-size: 20%;
+        background: url('../images/fogo.svg') center/cover repeat;
+        
 
         @include mx.thunder-flash();
     }
 
     .meg:hover {
-        background: url('../images/rosa.svg') center/cover repeat;
-        background-size: 20%;
+        background: url('../images/flor.svg') center/cover repeat;
+        
 
         @include mx.thunder-flash();
     }
 
     .zeus:hover {
-        background: url('../images/thunder.svg') center/cover repeat;
-        background-size: 40%;
+        background: url('../images/raio.svg') center/cover repeat;
+        
 
         @include mx.thunder-flash();
     }
 
     .pegaso:hover {
-        background: url('../images/wing2.png') center/cover repeat;
-        background-size: 20%;
+        background: url('../images/asas.svg') center/cover repeat;
+        
 
         @include mx.thunder-flash();
     }
@@ -311,7 +311,7 @@
     }
 
     audio {
-        width: 100%;
+        width: 95%;
     }
 
 }
