@@ -11,12 +11,23 @@
     border-radius: 15px;
 }
 
+@mixin section-title() {
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 3px solid v.$tertiary-color;
+    color: v.$text-color-light;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+
+}
+
 @mixin thunder-flash() {
     background-size: 20%;
     background-color: #fff;
     animation: thunder-flash 0.5s ease-in-out 3;
 
     @keyframes thunder-flash {
+
         0%,
         100% {
             opacity: 1;
