@@ -105,9 +105,8 @@ header img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-self: end;
 }
-@media (max-width: 930px) {
+@media (max-width: 950px) {
   .menu .menu-secundario {
     display: none;
   }
