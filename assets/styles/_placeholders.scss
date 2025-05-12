@@ -1,0 +1,18 @@
+@use 'variables' as v;
+
+%section-container {
+    max-width: 80%;
+    background: v.$primary-color;
+    margin: 3rem auto;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+%section-title {
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 3px solid v.$tertiary-color;
+    color: v.$text-color-light;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+}

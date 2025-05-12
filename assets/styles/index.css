@@ -1,5 +1,22 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+#trailer, #personagens, #imagens, #trilha, #premios {
+  max-width: 80%;
+  background: #3a6cc7;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+#trailer .section-title, #personagens .section-title, #imagens .section-title, #trilha .section-title, #premios .section-title {
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 3px solid #058596;
+  color: #fff;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+}
+
 header {
   background: #3a6cc7;
   z-index: 5;
@@ -182,21 +199,8 @@ header img {
 }
 
 #trailer {
-  max-width: 80%;
-  background: #3a6cc7;
-  margin: 3rem auto;
-  padding: 2rem;
-  border-radius: 15px;
   display: flex;
   flex-direction: column;
-}
-#trailer .section-title {
-  text-transform: uppercase;
-  text-align: center;
-  border-bottom: 3px solid #058596;
-  color: #fff;
-  margin-bottom: 2rem;
-  padding-bottom: 0.5rem;
 }
 #trailer .video-frame {
   margin: 1.5rem auto;
@@ -215,22 +219,9 @@ header img {
 }
 
 #personagens {
-  max-width: 80%;
-  background: #3a6cc7;
-  margin: 3rem auto;
-  padding: 2rem;
-  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-#personagens .section-title {
-  text-transform: uppercase;
-  text-align: center;
-  border-bottom: 3px solid #058596;
-  color: #fff;
-  margin-bottom: 2rem;
-  padding-bottom: 0.5rem;
 }
 #personagens .characters-container {
   display: grid;
@@ -279,109 +270,96 @@ header img {
   font-size: clamp(0.875rem, 1vw, 1rem);
   line-height: 120%;
   letter-spacing: 0.2px;
-  text-align: justify;
+  text-align: center;
   color: #000;
 }
-#personagens .herc:hover {
-  background: url("../images/halter.svg") center/cover repeat;
-  background-size: 20%;
-  background-color: #fff;
-  animation: thunder-flash 0.5s ease-in-out 3;
-}
-@keyframes thunder-flash {
-  0%, 100% {
-    opacity: 1;
+@media (min-width: 769px) {
+  #personagens .herc:hover {
+    background: url("../images/halter.svg") center/cover repeat;
+    background-size: 20%;
+    background-color: #fff;
+    animation: thunder-flash 0.5s ease-in-out 3;
   }
-  50% {
-    opacity: 0.9;
+  @keyframes thunder-flash {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.9;
+    }
   }
-}
-#personagens .fil:hover {
-  background: url("../images/lira.svg") center/cover repeat;
-  background-size: 20%;
-  background-color: #fff;
-  animation: thunder-flash 0.5s ease-in-out 3;
-}
-@keyframes thunder-flash {
-  0%, 100% {
-    opacity: 1;
+  #personagens .fil:hover {
+    background: url("../images/lira.svg") center/cover repeat;
+    background-size: 20%;
+    background-color: #fff;
+    animation: thunder-flash 0.5s ease-in-out 3;
   }
-  50% {
-    opacity: 0.9;
+  @keyframes thunder-flash {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.9;
+    }
   }
-}
-#personagens .hades:hover {
-  background: url("../images/fogo.svg") center/cover repeat;
-  background-size: 20%;
-  background-color: #fff;
-  animation: thunder-flash 0.5s ease-in-out 3;
-}
-@keyframes thunder-flash {
-  0%, 100% {
-    opacity: 1;
+  #personagens .hades:hover {
+    background: url("../images/fogo.svg") center/cover repeat;
+    background-size: 20%;
+    background-color: #fff;
+    animation: thunder-flash 0.5s ease-in-out 3;
   }
-  50% {
-    opacity: 0.9;
+  @keyframes thunder-flash {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.9;
+    }
   }
-}
-#personagens .meg:hover {
-  background: url("../images/flor.svg") center/cover repeat;
-  background-size: 20%;
-  background-color: #fff;
-  animation: thunder-flash 0.5s ease-in-out 3;
-}
-@keyframes thunder-flash {
-  0%, 100% {
-    opacity: 1;
+  #personagens .meg:hover {
+    background: url("../images/flor.svg") center/cover repeat;
+    background-size: 20%;
+    background-color: #fff;
+    animation: thunder-flash 0.5s ease-in-out 3;
   }
-  50% {
-    opacity: 0.9;
+  @keyframes thunder-flash {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.9;
+    }
   }
-}
-#personagens .zeus:hover {
-  background: url("../images/raio.svg") center/cover repeat;
-  background-size: 20%;
-  background-color: #fff;
-  animation: thunder-flash 0.5s ease-in-out 3;
-}
-@keyframes thunder-flash {
-  0%, 100% {
-    opacity: 1;
+  #personagens .zeus:hover {
+    background: url("../images/raio.svg") center/cover repeat;
+    background-size: 20%;
+    background-color: #fff;
+    animation: thunder-flash 0.5s ease-in-out 3;
   }
-  50% {
-    opacity: 0.9;
+  @keyframes thunder-flash {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.9;
+    }
   }
-}
-#personagens .pegaso:hover {
-  background: url("../images/asas.svg") center/cover repeat;
-  background-size: 20%;
-  background-color: #fff;
-  animation: thunder-flash 0.5s ease-in-out 3;
-}
-@keyframes thunder-flash {
-  0%, 100% {
-    opacity: 1;
+  #personagens .pegaso:hover {
+    background: url("../images/asas.svg") center/cover repeat;
+    background-size: 20%;
+    background-color: #fff;
+    animation: thunder-flash 0.5s ease-in-out 3;
   }
-  50% {
-    opacity: 0.9;
+  @keyframes thunder-flash {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.9;
+    }
   }
 }
 
-#imagens {
-  max-width: 80%;
-  background: #3a6cc7;
-  margin: 3rem auto;
-  padding: 2rem;
-  border-radius: 15px;
-}
-#imagens .section-title {
-  text-transform: uppercase;
-  text-align: center;
-  border-bottom: 3px solid #058596;
-  color: #fff;
-  margin-bottom: 2rem;
-  padding-bottom: 0.5rem;
-}
 #imagens .movie-img-container {
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -426,21 +404,6 @@ header img {
   }
 }
 
-#trilha {
-  max-width: 80%;
-  background: #3a6cc7;
-  margin: 3rem auto;
-  padding: 2rem;
-  border-radius: 15px;
-}
-#trilha .section-title {
-  text-transform: uppercase;
-  text-align: center;
-  border-bottom: 3px solid #058596;
-  color: #fff;
-  margin-bottom: 2rem;
-  padding-bottom: 0.5rem;
-}
 #trilha .section-text,
 #trilha li {
   margin: 1rem auto;
@@ -471,21 +434,6 @@ header img {
   width: 95%;
 }
 
-#premios {
-  max-width: 80%;
-  background: #3a6cc7;
-  margin: 3rem auto;
-  padding: 2rem;
-  border-radius: 15px;
-}
-#premios .section-title {
-  text-transform: uppercase;
-  text-align: center;
-  border-bottom: 3px solid #058596;
-  color: #fff;
-  margin-bottom: 2rem;
-  padding-bottom: 0.5rem;
-}
 #premios .section-subtitle {
   color: #fff;
   margin-top: 2rem;
@@ -499,7 +447,7 @@ header img {
 }
 #premios ul li {
   position: relative;
-  padding-left: 2rem;
+  padding-left: 1.2rem;
   margin-bottom: 0.75rem;
   font-size: clamp(0.875rem, 1vw, 1rem);
   line-height: 120%;
@@ -518,14 +466,43 @@ header img {
   margin-top: 0.5rem;
   margin-left: 1.5rem;
 }
-#premios ul li ul li {
-  font-size: clamp(0.875rem, 1vw, 1rem);
-  line-height: 120%;
-  letter-spacing: 0.5px;
-}
 #premios ul li ul li::before {
   content: "–";
   color: #83b3e9;
+}
+
+footer {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  background: #3a6cc7;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  border-radius: 15px;
+  max-width: 80%;
+}
+footer p {
+  margin: 0.4rem 0;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+footer a:hover {
+  color: #83b3e9;
+  border-radius: 20px;
+  transition: all 0.2s ease-in;
 }
 
 * {
@@ -533,6 +510,10 @@ header img {
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
