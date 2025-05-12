@@ -2,9 +2,13 @@
 @use 'mixins' as mx;
 @use 'placeholders' as p;
 
+#inicio {
+    scroll-margin-top: 80px;
+}
+
 #sinopse {
     max-width: 80%;
-    margin: 3rem auto;
+    margin: 6rem auto;
     display: grid;
     grid-template-columns: 2fr minmax(200px, 30vw);
     grid-template-rows: auto auto auto;
@@ -72,7 +76,7 @@
 
     @media (max-width: 480px) {
         max-width: 90%;
-        margin: 2rem auto;
+        margin: 6rem auto;
 
         .title-img,
         .movie-poster {
@@ -83,7 +87,7 @@
 
 #trailer {
     @extend %section-container;
-    
+
     .section-title {
         @extend %section-title;
     }
@@ -111,7 +115,7 @@
 
 #personagens {
     @extend %section-container;
-    
+
     .section-title {
         @extend %section-title;
     }
@@ -209,7 +213,7 @@
 
 #imagens {
     @extend %section-container;
-    
+
     .section-title {
         @extend %section-title;
     }
@@ -337,7 +341,7 @@
                 position: absolute;
                 left: 0;
                 top: 0.15rem;
-                color: v.$secondary-color;
+                color: v.$quaternary-color;
                 font-weight: bold;
             }
 

@@ -1,6 +1,7 @@
 @use 'variables' as v;
 
 %section-container {
+    scroll-margin-top: 80px;
     max-width: 80%;
     background: v.$primary-color;
     margin: 3rem auto;
@@ -11,7 +12,7 @@
 %section-title {
     text-transform: uppercase;
     text-align: center;
-    border-bottom: 3px solid v.$tertiary-color;
+    border-bottom: 3px solid v.$quaternary-color;
     color: v.$text-color-light;
     margin-bottom: 2rem;
     padding-bottom: 0.5rem;

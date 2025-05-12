@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 #trailer, #personagens, #imagens, #trilha, #premios {
+  scroll-margin-top: 80px;
   max-width: 80%;
   background: #3a6cc7;
   margin: 3rem auto;
@@ -11,7 +12,7 @@
 #trailer .section-title, #personagens .section-title, #imagens .section-title, #trilha .section-title, #premios .section-title {
   text-transform: uppercase;
   text-align: center;
-  border-bottom: 3px solid #058596;
+  border-bottom: 3px solid #FFD400;
   color: #fff;
   margin-bottom: 2rem;
   padding-bottom: 0.5rem;
@@ -20,7 +21,9 @@
 header {
   background: #3a6cc7;
   z-index: 5;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -129,9 +132,13 @@ header img {
   }
 }
 
+#inicio {
+  scroll-margin-top: 80px;
+}
+
 #sinopse {
   max-width: 80%;
-  margin: 3rem auto;
+  margin: 6rem auto;
   display: grid;
   grid-template-columns: 2fr minmax(200px, 30vw);
   grid-template-rows: auto auto auto;
@@ -190,7 +197,7 @@ header img {
 @media (max-width: 480px) {
   #sinopse {
     max-width: 90%;
-    margin: 2rem auto;
+    margin: 6rem auto;
   }
   #sinopse .title-img,
   #sinopse .movie-poster {
@@ -459,7 +466,7 @@ header img {
   position: absolute;
   left: 0;
   top: 0.15rem;
-  color: #83b3e9;
+  color: #FFD400;
   font-weight: bold;
 }
 #premios ul li ul {
