@@ -17,6 +17,8 @@
 
     .title-img {
         grid-area: 1 / 1 / 2 / 2;
+        width: clamp(200px, 100%, 300px);
+        filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
     }
 
     .sinopse-title {
@@ -32,19 +34,10 @@
 
     .movie-poster {
         grid-area: 1 / 2 / 4 / 3;
-    }
-
-    .title-img {
-        width: clamp(200px, 100%, 300px);
-        filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
-    }
-
-    .movie-poster {
         width: clamp(200px, 100%, 300px);
         filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
         border-radius: 15px;
     }
-
 
     @media (max-width: 768px) {
         grid-template-columns: 1fr;
@@ -87,13 +80,12 @@
 
 #trailer {
     @extend %section-container;
+    display: flex;
+    flex-direction: column;
 
     .section-title {
         @extend %section-title;
     }
-
-    display: flex;
-    flex-direction: column;
 
     .video-frame {
         margin: 1.5rem auto;
@@ -115,15 +107,13 @@
 
 #personagens {
     @extend %section-container;
-
-    .section-title {
-        @extend %section-title;
-    }
-
     display: flex;
     flex-direction: column;
     justify-content: center;
 
+    .section-title {
+        @extend %section-title;
+    }
 
     .characters-container {
         display: grid;
@@ -151,7 +141,6 @@
         padding: 1rem;
         border-radius: 15px;
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), inset 0 0 0 0.2rem #fff;
-
         width: clamp(150px, 100%, 250px);
 
         img {
@@ -183,27 +172,22 @@
             background: url('../images/halter.svg') center/cover repeat;
             @include mx.thunder-flash();
         }
-
         .fil:hover {
             background: url('../images/lira.svg') center/cover repeat;
             @include mx.thunder-flash();
         }
-
         .hades:hover {
             background: url('../images/fogo.svg') center/cover repeat;
             @include mx.thunder-flash();
         }
-
         .meg:hover {
             background: url('../images/flor.svg') center/cover repeat;
             @include mx.thunder-flash();
         }
-
         .zeus:hover {
             background: url('../images/raio.svg') center/cover repeat;
             @include mx.thunder-flash();
         }
-
         .pegaso:hover {
             background: url('../images/asas.svg') center/cover repeat;
             @include mx.thunder-flash();
@@ -292,7 +276,6 @@
         grid-row-gap: 15px;
         justify-items: center;
         grid-auto-flow: dense;
-
     }
 
     .audio-container {
@@ -304,7 +287,6 @@
     audio {
         width: 95%;
     }
-
 }
 
 #premios {
@@ -319,7 +301,6 @@
         margin-top: 2rem;
         margin-bottom: 1rem;
         position: relative;
-
     }
 
     ul {
@@ -351,7 +332,7 @@
 
                 li {
                     &::before {
-                        content: '–'; // Subnível
+                        content: '–';
                         color: v.$secondary-color;
                     }
                 }
