@@ -172,27 +172,22 @@
             background: url('../images/halter.svg') center/cover repeat;
             @include mx.thunder-flash();
         }
-
         .fil:hover {
             background: url('../images/lira.svg') center/cover repeat;
             @include mx.thunder-flash();
         }
-
         .hades:hover {
             background: url('../images/fogo.svg') center/cover repeat;
             @include mx.thunder-flash();
         }
-
         .meg:hover {
             background: url('../images/flor.svg') center/cover repeat;
             @include mx.thunder-flash();
         }
-
         .zeus:hover {
             background: url('../images/raio.svg') center/cover repeat;
             @include mx.thunder-flash();
         }
-
         .pegaso:hover {
             background: url('../images/asas.svg') center/cover repeat;
             @include mx.thunder-flash();
@@ -321,7 +316,6 @@
             line-height: 120%;
             letter-spacing: 0.5px;
             color: v.$text-color-light;
-            list-style: none;
 
             &::before {
                 content: '✔';
@@ -330,9 +324,19 @@
                 top: 0.15rem;
                 color: v.$quaternary-color;
                 font-weight: bold;
-                font-family: 'Arial', sans-serif;
+            }
+
+            ul {
+                margin-top: 0.5rem;
+                margin-left: 1.5rem;
+
+                li {
+                    &::before {
+                        content: '–';
+                        color: v.$secondary-color;
+                    }
+                }
             }
         }
-
     }
 }
