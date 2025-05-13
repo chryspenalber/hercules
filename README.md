@@ -5,8 +5,8 @@ Este projeto é uma homenagem interativa e responsiva ao clássico da Disney **H
 ## 📸 Preview
 
 🔗 Links
-🔴 [Live Site](#)
-💻 [Repositório no GitHub](#)
+🔴 [Live Site](https://chryspenalber.github.io/hercules/)
+💻 [Repositório no GitHub](https://github.com/chryspenalber/hercules)
 
 ## 📐 Visão Geral
 
