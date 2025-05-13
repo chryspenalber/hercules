@@ -4,6 +4,8 @@ Este projeto é uma homenagem interativa e responsiva ao clássico da Disney **H
 
 ## 📸 Preview
 
+Ao final do ReadMe
+
 ![Screenshot da página Hércules](./assets/images/screenshot-herc.png)
 
 🔗 Links
@@ -69,4 +71,8 @@ A interface foi projetada para funcionar perfeitamente em dispositivos móveis, 
 ## ⚠️ Aviso Legal
 
 Este site é uma homenagem não oficial ao filme **Hércules** (1997) da Disney. Todos os direitos de imagem, som e personagens pertencem à The Walt Disney Company.
+
+## 📸 Preview
+
+![Screenshot da página Hércules](./assets/images/screenshot-herc.png)
 
