@@ -6,7 +6,6 @@ Este projeto é uma homenagem interativa e responsiva ao clássico da Disney **H
 
 Ao final do ReadMe
 
-![Screenshot da página Hércules](./assets/images/screenshot-herc.png)
 
 🔗 Links
 
